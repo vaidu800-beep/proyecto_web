@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Personal</title>
+
+    <!-- 1. Bootstrap cargado localmente desde la carpeta css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- 2. Tu hoja de estilos personalizada desde la carpeta css -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="bg-light text-dark">
+
+    <!-- Banner Principal -->
+    <header class="banner bg-primary text-white text-center py-5 shadow-sm">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Mi Sitio Web Personal</h1>
+            <p class="lead mb-0">Bienvenido a mi espacio personal e informativo</p>
+        </div>
+    </header>
+
+    <!-- Barra de Navegación -->
+    <nav class="navegacion navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+        <div class="container">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link px-3" href="paginas/datos_personales.html">Datos Personales</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="paginas/hobbies.html">Hobbies</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="paginas/mascotas.html">Mascotas</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="paginas/deporte.html">Deporte</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="paginas/comida.html">Comida Favorita</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="paginas/lugares.html">Lugares Favoritos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+
+        <!-- Sección 1: Slider de Imágenes -->
+        <section class="seccion-slider mb-5 text-center">
+            <h2 class="mb-4 text-secondary">Galería Destacada</h2>
+            <div class="slider-contenedor position-relative overflow-hidden rounded shadow bg-white p-3">
+                <div class="diapositiva activa">
+                    <img src="paginas/imagenes/slider1.jpg" alt="Imagen 1" class="img-fluid rounded">
+                </div>
+                <div class="diapositiva">
+                    <img src="paginas/imagenes/slider2.jpeg" alt="Imagen 2" class="img-fluid rounded">
+                </div>
+                <div class="diapositiva">
+                    <img src="paginas/imagenes/slider3.jpg" alt="Imagen 3" class="img-fluid rounded">
+                </div>
+                <div class="diapositiva">
+                    <img src="paginas/imagenes/slider4.jpeg" alt="Imagen 4" class="img-fluid rounded">
+                </div>
+                <div class="diapositiva">
+                    <img src="paginas/imagenes/slider5.jpeg" alt="Imagen 5" class="img-fluid rounded">
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                    <button class="btn btn-outline-primary btn-slider btn-anterior" onclick="cambiarDiapositiva(-1)">&#10094; Anterior</button>
+                    <button class="btn btn-outline-primary btn-slider btn-siguiente" onclick="cambiarDiapositiva(1)">Siguiente &#10095;</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 2: Blog / Noticias Recientes -->
+        <section class="seccion-noticias mb-5">
+            <h2 class="mb-4 text-secondary">Últimas Noticias y Actualizaciones</h2>
+            <article class="noticia-card card shadow-sm p-4 border-0">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-4">
+                        <img src="paginas/imagenes/noticia1.jpg" alt="Noticia deporte" class="img-fluid rounded shadow-sm">
+                    </div>
+                    <div class="col-md-8">
+                        <h3 class="h4 text-dark">Nuevo récord en mi rutina de deporte</h3>
+                        <p class="text-muted mb-2"><em>Publicado el 7 de Octubre, 2026</em></p>
+                        <p>Hoy logré superar mi marca personal de entrenamiento gracias a la constancia y disciplina diaria.</p>
+                        <button class="btn btn-primary btn-noticia">Leer más</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Sección 3: Tablas con Efecto Visual -->
+        <section class="seccion-tablas mb-5">
+            <h2 class="mb-4 text-secondary">Resumen de Preferencias y Datos</h2>
+            <div class="card shadow-sm border-0 p-3">
+                <h3 class="h5 mb-3 text-muted">Tabla Interactiva</h3>
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped align-middle tabla-zebra">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Categoría</th>
+                                <th>Descripción</th>
+                                <th>Frecuencia</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Deporte</td>
+                                <td>Entrenamiento físico y rutinas de ejercicio</td>
+                                <td>Diario</td>
+                                <td><button class="btn btn-sm btn-info text-white btn-tabla" onclick="location.href='paginas/deporte.html'">Ver detalle</button></td>
+                            </tr>
+                            <tr>
+                                <td>Hobbies</td>
+                                <td>Desarrollo web y proyectos tecnológicos</td>
+                                <td>Semanal</td>
+                                <td><button class="btn btn-sm btn-info text-white btn-tabla" onclick="location.href='paginas/hobbies.html'">Ver detalle</button></td>
+                            </tr>
+                            <tr>
+                                <td>Mascotas</td>
+                                <td>Cuidado y paseos de mascotas</td>
+                                <td>Diario</td>
+                                <td><button class="btn btn-sm btn-info text-white btn-tabla" onclick="location.href='paginas/mascotas.html'">Ver detalle</button></td>
+                            </tr>
+                            <tr>
+                                <td>Comida</td>
+                                <td>Platillos tradicionales y comidas favoritas</td>
+                                <td>Fines de semana</td>
+                                <td><button class="btn btn-sm btn-info text-white btn-tabla" onclick="location.href='paginas/comida.html'">Ver detalle</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer / Pie de Página -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-1">&copy; 2026 Página Web Personal. Todos los derechos reservados.</p>
+            <p class="mb-3">Contacto / Red Social: <a href="https://www.instagram.com/400eldelapulsar?stkn=YTZjOTQxc3V4Mjcx&utm_-source=qr" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-info">Mi Red Social Personal</a></p>
+            <button class="btn btn-outline-light btn-sm" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">Volver arriba</button>
+        </div>
+    </footer>
+
+    <!-- JS cargado desde la carpeta js -->
+    <script src="js/script.js"></script>
+</body>
+</html>

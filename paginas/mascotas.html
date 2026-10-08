@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mascotas</title>
+    
+    <!-- Rutas relativas ajustadas para la carpeta 'paginas/' -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body class="bg-light text-dark">
+
+    <!-- Banner Principal -->
+    <header class="banner bg-primary text-white text-center py-5 shadow-sm">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Mis Mascotas</h1>
+            <p class="lead mb-0">Compañeros fieles y momentos especiales</p>
+        </div>
+    </header>
+
+    <!-- Barra de Navegación -->
+    <nav class="navegacion navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+        <div class="container">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link px-2" href="../index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link px-2" href="datos_personales.html">Datos Personales</a></li>
+                <li class="nav-item"><a class="nav-link px-2" href="hobbies.html">Hobbies</a></li>
+                <li class="nav-item"><a class="nav-link px-2 active fw-bold text-info" href="mascotas.html">Mascotas</a></li>
+                <li class="nav-item"><a class="nav-link px-2" href="deporte.html">Deporte</a></li>
+                <li class="nav-item"><a class="nav-link px-2" href="comida.html">Comida Favorita</a></li>
+                <li class="nav-item"><a class="nav-link px-2" href="lugares.html">Lugares Favoritos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="container my-5">
+        <section class="card shadow-sm border-0 p-5 bg-white">
+            <h2 class="mb-3 text-secondary">Compañeros Caninos</h2>
+            <h3 class="h4 mb-3 text-dark">Luna - Husky Siberiano</h3>
+            <p class="fs-5 text-muted mb-4">Luna es una perrita de raza Husky de 3 años de edad. Le gusta pasear y jugar al aire libre.</p>
+
+            <!-- Carrusel / Slider de imágenes usando Bootstrap mejorado -->
+            <div id="carruselMascotas" class="carousel slide shadow rounded overflow-hidden my-4 mx-auto" data-bs-ride="carousel" style="max-width: 600px;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <div class="carousel-item active">
+    <img src="imagenes/mascota1.jpg" class="d-block w-100 img-fluid rounded" alt="Luna jugando en el parque">
+</div>
+
+                <!-- Botones de navegación del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselMascotas" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselMascotas" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+
+            <div class="mt-4">
+                <button class="btn btn-outline-secondary btn-sm" onclick="window.history.back()">&#10229; Volver Atrás</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer / Pie de Página -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Página Web Personal. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script de Bootstrap (necesario para que funcionen las flechas del carrusel) -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

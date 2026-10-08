@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Personales</title>
+    
+    <!-- Rutas relativas ajustadas para la carpeta 'paginas/' -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body class="bg-light text-dark">
+
+    <!-- Banner Principal -->
+    <header class="banner bg-primary text-white text-center py-5 shadow-sm">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Datos Personales</h1>
+            <p class="lead mb-0">Información General y Perfil</p>
+        </div>
+    </header>
+
+    <!-- Barra de Navegación -->
+    <nav class="navegacion navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+        <div class="container">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link px-2" href="../index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link px-2 active fw-bold text-info" href="datos_personales.html">Datos Personales</a></li>
+                <li class="nav-item"><a class="nav-link px-2" href="hobbies.html">Hobbies</a></li>
+                <li class="nav-item"><a class="nav-link px-2" href="mascotas.html">Mascotas</a></li>
+                <li class="nav-item"><a class="nav-link px-2" href="deporte.html">Deporte</a></li>
+                <li class="nav-item"><a class="nav-link px-2" href="comida.html">Comida Favorita</a></li>
+                <li class="nav-item"><a class="nav-link px-2" href="lugares.html">Lugares Favoritos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="container my-5">
+        <section class="card shadow-sm border-0 p-4 bg-white">
+            <h2 class="mb-3 text-secondary">Información Personal</h2>
+            <h3 class="h4 mb-3 text-dark">Perfil Académico</h3>
+            <p class="fs-5 text-muted mb-4">Estudiante de Ingeniería en Sistemas Computacionales en el Tecnológico de Estudios Superiores de Coacalco (TESCo).</p>
+            
+            <div class="table-responsive mb-4">
+                <table class="table table-hover table-striped align-middle tabla-zebra border">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Campo</th>
+                            <th>Detalle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fw-bold">Nombre Completo</td>
+                            <td>Sergio Vaidu Rojas López</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Institución</td>
+                            <td>TESCo</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Carrera</td>
+                            <td>Ingeniería en Sistemas Computacionales</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div>
+                <button class="btn btn-outline-secondary btn-sm" onclick="window.history.back()">&#10229; Volver Atrás</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer / Pie de Página -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Página Web Personal. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
